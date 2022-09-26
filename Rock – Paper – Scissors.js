@@ -65,14 +65,14 @@ function rockPaperScissors() {
 
             if ((playerTurn == rock && computerTurn == scissors) || (playerTurn == paper && computerTurn == rock) ||
                 (playerTurn == scissors && computerTurn == paper)) {
-                console.log(`You win!`)
+                console.log(`\x1b[32mYou win! \x1b[0m`)
                 recursivePlayAgain();
             } else if ((playerTurn == rock && computerTurn == paper) || (playerTurn == paper && computerTurn == scissors) ||
                 (playerTurn == scissors && computerTurn == rock)) {
-                console.log(`You loose!`);
+                console.log(`\x1b[31mYou loose! \x1b[0m`);
                 recursivePlayAgain();
             } else {
-                console.log('Draw!');
+                console.log('\x1b[33mDraw! \x1b[0m');
                 recursivePlayAgain();
             }
 
